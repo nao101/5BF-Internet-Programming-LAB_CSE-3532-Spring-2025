@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block content %}
+   <!-- Service Start -->
+    <div class="container-fluid py-5" id="services">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Checkout</h6>
+                <h3>Book For {{ package.destination }} ❣️</h3>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="service-item bg-white mb-2 py-5 px-4">
+                        <div class="amariccha">
+                            <p><b>Price per Person:</b> ${{ package.price }}</p>
+                            <p><b>Duration:</b> {{ package.duration_days }} days</p>
+                            <form method="post">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+{% endblock content %}

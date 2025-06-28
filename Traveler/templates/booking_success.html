@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block content %}
+   <!-- Service Start -->
+    <div class="container-fluid py-5" id="services">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Checkout</h6>
+                <h3>Book For {{ booking.package.destination }} ❣️</h3>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="service-item bg-white mb-2 py-5 px-4">
+                        <div style="text-align: center; font-family: Arial, sans-serif;">
+                            <h1 style="color: #4CAF50; font-size: 2.5em;">🎉 Booking Confirmed! 🎉</h1>
+                            <p style="font-size: 1.2em;">Thank you, <strong>{{ booking.customer_name }}</strong>! 🧳✈️</p>
+                            <p style="font-size: 1.2em;">Your booking for <strong>"🌍 {{ booking.package.title }}"</strong> has been confirmed! ✅</p>
+                            <p style="font-size: 1.5em; color: #FF5733;">💰 <strong>Total Price:</strong> ${{ booking.total_price }}</p>
+                            <p style="font-size: 1.5em; color: #007BFF;">📅 <strong>Travel Date:</strong> 🗓️ {{ booking.travel_date }}</p>
+                            <p style="font-size: 1.2em;">🌟 Get ready for the adventure of a lifetime! 🚀✨</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+{% endblock content %}
