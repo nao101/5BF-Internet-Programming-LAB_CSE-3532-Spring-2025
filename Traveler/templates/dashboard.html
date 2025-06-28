@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block content %}
+   <!-- Service Start -->
+    <div class="container-fluid py-5" id="services">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Dashboard</h6>
+                <h1>Booking Details</h1>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <table class="table text-center">
+                            <thead>
+                                <tr style="color: #7AB730;"> <!-- Use the same color as the icon -->
+                                    <th>Booking ID</th>
+                                    <th>Customer Name</th>
+                                    <th>Travel Date</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for booking in bookings %}
+                                <tr>
+                                    <td>{{ booking.id }}</td>
+                                    <td>{{ booking.customer_name }}</td>
+                                    <td>{{ booking.travel_date }}</td>
+                                    <td>{{ booking.booking_status }}</td>
+                                    <td>
+                                        <button class="action-button btn btn-primary btn-sm" data-id="{{ booking.uuid }}">Send Booking Info</button>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+    {% endblock content %}
