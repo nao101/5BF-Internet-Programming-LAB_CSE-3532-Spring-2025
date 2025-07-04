@@ -35,44 +35,6 @@ Welcome to the Online Book Store, a full-stack web application built using the M
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🛠️ 𝗜𝗻𝘀𝘁𝗮𝗹𝗹𝗮𝘁𝗶𝗼𝗻 & 𝗦𝗲𝘁𝘂𝗽
-
-1️⃣ 𝗖𝗹𝗼𝗻𝗲 𝘁𝗵𝗲 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆  
-   ```bash
-   git clone https://github.com/your-repo/online-book-store.git
-   cd online-book-store
-   ```
-
-2️⃣ 𝗜𝗻𝘀𝘁𝗮𝗹𝗹 𝗗𝗲𝗽𝗲𝗻𝗱𝗲𝗻𝗰𝗶𝗲𝘀  
-   ```bash
-   # Install frontend dependencies
-   cd frontend
-   npm install
-   
-   # Install backend dependencies
-   cd ../backend
-   npm install
-   ```
-
-3️⃣ 𝗦𝗲𝘁 𝗨𝗽 𝗘𝗻𝘃𝗶𝗿𝗼𝗻𝗺𝗲𝗻𝘁 𝗩𝗮𝗿𝗶𝗮𝗯𝗹𝗲𝘀  
-   - Create a `.env` file in the `backend` directory and add:  
-   ```
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   ```
-
-4️⃣ 𝗥𝘂𝗻 𝘁𝗵𝗲 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻  
-   ```bash
-   # Start the backend
-   cd backend
-   npm run start:dev
-   
-   # Start the frontend
-   cd ../frontend
-   npm run dev
-   ```
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🚀 𝗙𝘂𝘁𝘂𝗿𝗲 𝗘𝗻𝗵𝗮𝗻𝗰𝗲𝗺𝗲𝗻𝘁𝘀
 ✔️ Implement online payment integration  
