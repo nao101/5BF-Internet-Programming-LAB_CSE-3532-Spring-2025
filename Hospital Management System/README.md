@@ -1,6 +1,6 @@
 ### 🏥 **Project Title:**
 
-**Hospital Management System (HMS)**
+**Hospital Management System**
 
 ---
 
@@ -35,26 +35,24 @@ The Hospital Management System is a web-based application designed to simplify a
 
 ### 💻 **Technologies Used:**
 
-* 🌐 HTML5
-* 🎨 CSS3
+* 🌐 HTML
+* 🎨 CSS
 * ⚙️ JavaScript
-* 🧩 Bootstrap / Tailwind CSS
+* 🧩 Bootstrap 
 * 🐍 Python
 * 🔧 Django
-* 🔌 Django REST Framework (optional)
+* 🔌 Django REST Framework 
 * 📂 PostgreSQL / MySQL
 * 🧪 SQLite (for development)
 * ✉️ Django Email Backend
 * 📄 ReportLab / WeasyPrint (PDF generation)
-* 📌 Google Meet (manual link sharing)
-* 🗃️ Django Admin Panel
-* 🔁 Git & GitHub
-* 🧑‍💻 Visual Studio Code (VS Code)
-* 🧪 Postman (if APIs are used)
+* 🗃️ Django Admin Panel 
 
 ---
 
 ### 🗼️ **Screenshots:**
 
 ![Screenshot 2025-06-27 205358](https://github.com/user-attachments/assets/b77f7b42-40ba-43eb-ac03-515f138f886e)
+
+
 
