@@ -48,4 +48,3 @@ Welcome to the Online Book Store, a full-stack web application built using the M
 
 
 💡 𝗛𝗮𝗽𝗽𝘆 𝗖𝗼𝗱𝗶𝗻𝗴! 🚀
-
