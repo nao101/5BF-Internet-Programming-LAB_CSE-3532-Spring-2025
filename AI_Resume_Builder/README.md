@@ -1,171 +1,71 @@
-# 🚀 AI RESUME BUILDER 
+<h1 align="center">🧠 AI Resume Builder – Backend</h1>
 
-**AI Resume Builder** is a smart, AI-powered platform that simplifies and enhances the resume-building process. With intelligent feedback and real-time suggestions, users can effortlessly generate professional, impactful resumes that increase their chances of landing the right job. The application is secure, user-friendly, and highly customizable.
-
-
----
-
-## 👥 Team Members & Roles
-
-### 👩‍💻 **Kazi Namira Meyheg Sanam (ID: C231450)**  
+<p align="center"><b>Powerful backend using Strapi CMS, PostgreSQL, and Google Gemini API for AI resume content generation.</b></p>
 
 ---
 
-**Frontend Development**  
-  
-  
-  
-  
-  - Set up the frontend using React, Vite, and Tailwind CSS  
-  - Designed the UI/UX layout and worked on responsiveness 
-  - Progressed significantly on building out the frontend components  
-  - Will collaborate on integrating frontend with backend APIs  
-  - Focus on creating an intuitive and interactive user interface  
-  - Will implement AI-based UI feedback features such as real-time suggestions and visual resume scoring   
+<h2>✨ Features</h2>
 
-<br>
-
-
-
-### 👩‍💻 **Umme Benin Yeasmin Meem (ID: C231452)**  
+<ul>
+  <li>⚙️ <b>Strapi CMS</b> – Manage API endpoints & resume data</li>
+  <li>🧠 <b>AI Integration</b> – Generate professional resume content</li>
+  <li>🗃 <b>PostgreSQL</b> – Securely store user and resume data</li>
+  <li>🔐 <b>Auth Support</b> – Works with Clerk for secure data access</li>
+</ul>
 
 ---
 
-**Backend Development**  
-  
-  
-  
-  
-  - Implemented authentication API  
-  - Set up the backend using Strapi CMS
-  - Created the PostgreSQL database using **Neon.tech**
-  - Connected the backend to the frontend     
-  - Will integrate Gemini AI for resume analysis   
-  - Will manage authentication, resume data, and skill analysis API endpoints  
-  - Will ensure secure API handling and further backend enhancements  
+<h2>🛠 Tech Stack</h2>
 
-
+<ul>
+  <li>📜 <b>Strapi CMS</b> – Headless content management system</li>
+  <li>🐘 <b>PostgreSQL</b> – Cloud-hosted on Neon.tech</li>
+  <li>🤖 <b>Google Gemini API</b> – AI-powered content generation</li>
+</ul>
 
 ---
 
+<h2>📦 Installation & Usage</h2>
 
-
-## 🏗️ Current Project Status
-
-Currently, the project has progressed from the planning phase to initial development. The frontend environment has been set up and actively developed with a responsive layout, while the backend is configured using Strapi. A PostgreSQL database has been created via Neon.tech, and integration between frontend and backend has begun.
-
----
-
-
-### ✅ Key Progress So Far:
-- ⚙️ Frontend setup with React, Vite, and Tailwind CSS is almost complete
-- 🎨 UI/UX layout is partially implemented and under active development
-- 🛠 Backend initialized using **Strapi** (headless CMS)
-- 🗄 PostgreSQL database successfully created and hosted on **Neon.tech**
-- 🔗 Initial backend–frontend connection established and being extended
-- 🚧 Further development for resume processing, AI integration, and full deployment is in progress
-
-
+<pre>
+cd backend
+npm install
+npm run develop
+</pre>
 
 ---
 
+<h2>🔧 Configuration</h2>
 
-
-## 🎯 Project Overview
-
-We aim to develop an AI-driven system that analyzes resumes and provides feedback on structure, skills, and improvements to enhance job opportunities.
-
-
----
-
-
-
-## ✨ Key Features
-
-- 🔍 **AI-Based Resume Analysis** – Get intelligent insights on your resume structure and content  
-- 🧠 **Smart Skill Suggestion** – Enhance your resume with in-demand, role-specific skill recommendations  
-- ⚡ **Real-time Feedback** – Instant suggestions and optimization tips while building your resume  
-- 🔐 **Secure Data Handling** – Ensures all user data is managed safely and privately  
-- 📈 **Interactive & Responsive Interface** – User-friendly, modern UI built for a seamless experience  
-
-
+<p>
+Create a <code>.env</code> file to store:
+<ul>
+  <li>Database credentials</li>
+  <li>Gemini API key</li>
+  <li>Optional: Clerk secret for token validation</li>
+</ul>
+</p>
 
 ---
 
+<h2>🌐 Deployment</h2>
 
-
-## 🛠 Tech Stack
-
-
-
-### 🎯 Frontend  
-- 🚀 **React.js** – For building dynamic and interactive UIs 
-- ⚡ **Vite** – For fast development and optimized builds
-- 🎨 **Tailwind CSS** – For responsive and modern styling 
-
+<p>Planned to deploy backend on <b>Render</b>, connected to PostgreSQL (Neon.tech).</p>
 
 ---
 
+<h2>🧭 Flow Overview</h2>
 
-### 🧩 Backend  
-- 🛠 **Node.js + Express.js** – Server-side development   
-- 📜 **Strapi** – Headless CMS setup from scratch for managing APIs and content
-
-
----
-
-
-### 🗃️ Database  
-- 🐘 **PostgreSQL** – Relational database for resume and user data
-- ☁️ **Neon.tech** – Fully managed PostgreSQL database in the cloud  
-
+<pre>
+Frontend request → Strapi API → Gemini API → AI response → Store/return data
+</pre>
 
 ---
 
+<h2>📬 Contact</h2>
 
-### 🤖 AI Integration  
-- 🤖 **Gemini API** – For resume scoring, feedback, and suggestions  
-- 🧠 **Natural Language Processing (NLP) & AI Models** – For text analysis and improvement suggestions  
+<p>
+🧠 Backend: Umme Benin Yeasmin Meem <br/>
+🎨 Frontend: Kazi Namira Meyheg Sanam
+</p>
 
-
----
-
-
-### 📌 Deployment  
-- 🌍 **Vercel** – For frontend (Vite) hosting  
-- 🔧 **Render** – For backend (Strapi) hosting  
-
-
----
-
-
-## 🚧 Development Roadmap
-
-📍 **Phase 1** – Project structure & frontend setup  
-✅ *Completed by Kazi Namira Meyheg Sanam*
-
-📍 **Phase 2** – Build core frontend components  
-✅ *Progressed significantly by Kazi Namira Meyheg Sanam*
-
-📍 **Phase 3** – Backend setup with Strapi CMS  
-✅ *Completed by Umme Benin Yeasmin Meem*
-
-📍 **Phase 4** – Create PostgreSQL database on Neon.tech  
-✅ *Completed by Umme Benin Yeasmin Meem*
-
-📍 **Phase 5** – Begin frontend-backend integration  
-✅ *Started integration between frontend and Strapi*
-
-📍 **Phase 6** – Implement resume upload & AI analysis logic  
-🚧 *Upcoming*
-
-📍 **Phase 7** – AI feedback, skill suggestion & enhancement engine  
-🚧 *Upcoming*
-
-📍 **Phase 8** – Final integration, testing & deployment  
-🚧 *Upcoming*
-
-
----
-
-Feel free to contribute or follow our progress on GitHub!😊
