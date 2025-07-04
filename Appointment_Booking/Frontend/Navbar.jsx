@@ -1,58 +1,33 @@
-import React, { useContext, useState } from 'react';
-import './Navbar.css';
+import React, { useContext } from 'react'
+import { AdminContext } from '../context/AdminContext'
 import 'boxicons/css/boxicons.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import { NavLink, useNavigate } from 'react-router-dom';
-import profile from '../assets/profile.png';
-import { AppContext } from '../context/AppContext';
-const Navbar = () => {
-  const navigate = useNavigate();
-  const { token, setToken, userData } = useContext(AppContext)
-  const [showMenu, setShowMenu] = useState(false)
-  const logout = () => {
-    setToken(false)
-    localStorage.removeItem('token')
-    navigate('/')
-  }
-  return (
-    <header className="header">
-      <NavLink to="/" className="logo">
-        <i className='bx bx-plus-medical'></i>Healthcare session.
-      </NavLink>
-      <div className="navbar">
-        <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
-          Home
-        </NavLink>
-        <NavLink to="/alldoctor" className={({ isActive }) => isActive ? 'active' : ''}>
-          All Doctors
-        </NavLink>
-        <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>
-          About
-        </NavLink>
-        <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>
-          Contact Us
-        </NavLink>
-      </div>
-      <div>
-        {
-          token && userData ? (<div className='profile-container'>
-            <img src={userData.image} alt="profile " className='profile' />
-            <i className="fa fa-caret-down dropdown-icon"></i>
-            <div className='dropdown-manu'>
-              <div>
-                <p onClick={() => navigate('my-profile')}>My Profile</p>
-                <p onClick={() => navigate('my-appointments')}>My Appointments</p>
-                <p onClick={logout}>Logout</p>
-                <p></p>
-              </div>
-            </div>
-          </div>) : (<NavLink to="/login" className={({ isActive }) => isActive ? 'btn actiiva' : 'btn'}>
-            Create Account
-          </NavLink>)
-        }
-      </div>
-    </header>
-  );
-};
+import {useNavigate} from 'react-router-dom'
+import './Navbar.css'
+import { DoctorContext } from '../context/DoctorContext';
 
-export default Navbar;
+const Navbar = () => {
+    const { aToken, setAToken } = useContext(AdminContext)
+    const {dToken , setDToken} = useContext(DoctorContext)
+    const navigate = useNavigate()
+    const logout = () => {
+        navigate('/')
+        aToken && setAToken('')
+        aToken && localStorage.removeItem('aToken')
+        dToken && setDToken('')
+        dToken && localStorage.removeItem('dToken')
+    }
+    return (
+        <div className="navbar">
+            <div className="navbar-left">
+                <i className='bx bx-plus-medical'></i>Healthcare session.
+                <p>{aToken ? 'Admin' : 'Doctor'}</p>
+            </div>
+            <div className="navbar-right">
+                <button onClick={logout} className="logout">Logout</button>
+            </div>
+        </div>
+    )
+}
+
+export default Navbar
