@@ -20,10 +20,12 @@ The **Doctor Appointment Booking System** is a web-based application that stream
 **Frontend:**  
 - HTML, CSS  
 - **React** (For UI)
+- JavaScript
 
 **Backend:**  
 - JavaScript (Node.js + Express)  
 - **MongoDB** (for database)
+  
 
 ---
 
