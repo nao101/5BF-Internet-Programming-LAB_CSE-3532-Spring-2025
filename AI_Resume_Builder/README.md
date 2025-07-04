@@ -129,3 +129,5 @@ For feedback or collaboration:
 <p align="center"> <i>Built with using React, Strapi, PostgreSQL, and AI — to shape the future of resume building.</i> </p>
 
 ---
+
+
