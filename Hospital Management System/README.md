@@ -54,5 +54,26 @@ The Hospital Management System is a web-based application designed to simplify a
 
 ![Screenshot 2025-06-27 205358](https://github.com/user-attachments/assets/b77f7b42-40ba-43eb-ac03-515f138f886e)
 
+---
+![Screenshot 2025-06-27 205238](https://github.com/user-attachments/assets/5bc5399a-4464-4b17-95da-7391806f342f)
+
+---
+![Screenshot 2025-06-27 205123](https://github.com/user-attachments/assets/b710836c-f83c-4147-9e0f-113dfb359678)
+
+---
+![Screenshot 2025-06-27 204909](https://github.com/user-attachments/assets/465b09c6-5d7e-4d30-96c9-bc8fd2f7a2ce)
+
+---
+![WhatsApp Image 2025-07-04 at 01 02 06_3366777d](https://github.com/user-attachments/assets/1e526b33-dd21-4e1d-a283-329e3504d9a7)
+
+---
+![WhatsApp Image 2025-07-04 at 01 02 06_b8f4e37e](https://github.com/user-attachments/assets/3d01c523-da8a-4dbb-87a3-f671c2a724ff)
+
+---
+![WhatsApp Image 2025-07-04 at 01 02 06_37e60c3d](https://github.com/user-attachments/assets/4031a72b-639e-4f9f-9780-ef1e09946cdb)
+
+---
+
+
 
 
